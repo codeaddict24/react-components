@@ -1,0 +1,21 @@
+:root{
+  --primary: #111229;
+  --secondary: #0259EB;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #0A0B1A!important;
+}
+ul li{
+  list-style: none;
+}
+h1, h2{
+  font-family: 'Libre Baskerville', serif;
+}
+p{
+  font-family: 'Nunito', sans-serif;
+}

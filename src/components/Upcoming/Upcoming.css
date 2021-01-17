@@ -1,0 +1,142 @@
+.Upcoming{
+    padding: 60px 0;
+}
+.UpcomingContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.UpcomingHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.UpcomingHeader h2{
+    color: #fff;
+    font-size: 32px;
+}
+.UpcomingHeader h2::after{
+    display: block;
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: var(--secondary);
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    border-radius: 5px;
+}
+.UpcomingHeader .ViewAll{
+    color: #E5C558;
+}
+.CardsWrapper{
+    margin-top: 30px;
+}
+.Upcoming .CardName{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #fff;
+    margin: 10px 0;
+}
+.Upcoming .CardCategory{
+    background: #E5C558;
+    color: #682F26;
+    font-weight: 600;
+    font-size: 12px;
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 1px;
+}
+.Upcoming .MoreInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.Upcoming .ant-card{
+    margin: 20px auto;
+    position: relative;
+    background: none;
+}
+.Upcoming .ant-card::before{
+    content:"";
+    z-index: -1;
+    position: absolute;
+    width:257px;
+    height:100%;
+    border-radius: 8px;
+    background: linear-gradient(163.41deg, #301A68 0.11%, #234C97 170.69%);
+    top: -8px;
+    left: 2px;
+}
+.Upcoming .ant-card-body{
+    background: var(--primary);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+.icon-ticket {
+    background-image: url("../../images/Ticket.svg");
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.icon-ticket::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 25px;
+    background: #292b63;
+}
+.icon-ticket:hover {
+    background-image: url("../../images/TicketHover.svg");
+}
+.CardsWrapper{
+    display: flex;
+    overflow: auto;
+}
+.CardsWrapper::-webkit-scrollbar{
+    display: none;
+}
+.CardsWrapper{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.CardsWrapper .ant-row{
+    flex-flow: unset;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+@media screen and (max-width: 1200px){
+    .Upcoming .ant-card{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width: 768px){
+    .CardsWrapper{
+        cursor: grabbing;
+        padding-left: 40px;
+    }
+    .UpcomingHeader h2{
+        font-size: 20px;
+    }
+    .Upcoming .ant-card{
+        min-width: 250px;
+    }
+    .CardsWrapper .ant-row{
+        padding: 0;
+    }
+}

@@ -1,0 +1,151 @@
+.Reviews{
+    padding: 60px 0;
+}
+.ReviewsContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.ReviewsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ReviewsHeader h2{
+    color: #fff;
+    font-size: 32px;
+}
+.ReviewsHeader h2::after{
+    display: block;
+    content: '';
+    width: 40px;
+    height: 3px;
+    background: var(--secondary);
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    border-radius: 5px;
+}
+.CardHeader{
+    display: flex;
+}
+.CardAvatar{
+    width: 60px;
+    height: 60px;
+}
+.HeaderName{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.HeaderCountry{
+    text-transform: uppercase;
+    color: #E5C558;
+    font-size: 11px;
+    line-height: 16px;
+    padding-left: 5px;
+}
+.CardBody p{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.CountryWrapper{
+    display: flex;
+    align-items: center;
+}
+.HeaderRight{
+    margin: 0 10px;
+}
+.CardHeader p{
+    margin: 0;
+}
+.Reviews .ant-card{
+    border: 2px solid #E5AF56;
+    border-radius: 16px;
+    background: #0A0B1A;
+    margin: 30px 0;
+    width: 350px!important;
+    position: relative;
+}
+
+.Reviews .ant-card::before{
+    content: '';
+    position: absolute;
+    width: 343px;
+    height: 240px;
+    background: linear-gradient(143.63deg, #276C73 5.43%, #5293E8 110.6%);
+    border-radius: 16px;
+    z-index: -1;
+    bottom: 8px;
+    left: 10px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 0!important;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev{
+    left: unset!important;
+    right: 40px;
+}
+.slick-next{
+    right: 5px!important;
+}
+.slick-next, .slick-prev {
+    top: -32px!important;
+}
+.slick-prev:before, .slick-next:before{
+    font-family: unset!important;
+}
+.slick-prev:before {
+    content: url("../../images/arrow.svg")!important;
+}
+.slick-next:before {
+    content: url("../../images/arrow.svg")!important;
+    transform: rotate(180deg)!important;
+    display: inline-block;
+    margin-top: 2px;
+}
+.slick-slide {
+    display: flex!important;
+    justify-content: center;
+}
+.Reviews .ant-btn{
+    background: #0259EB;
+    border-radius: 8px;
+    border: none;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+.Reviews .ant-btn:hover{
+    background: #004fd6;
+}
+.ReviewsButton{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px){
+    .Reviews .ant-btn{
+        justify-content: center;
+        width: 100%;
+    }
+}
